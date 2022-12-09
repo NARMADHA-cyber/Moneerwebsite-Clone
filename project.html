@@ -1,0 +1,241 @@
+<html lang="en-US">
+    <head>
+  <meta name="viewport" content="width=device-width", initial-scale="1.0">
+  <link rel="stylesheet" href="project.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/dd75a5c0f2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="box">
+          <div class="header">
+              <div class="nav-bar">
+                <div class="logo" >
+                  <img  width="100" height="34" src="./Images/moneerlogo.png"  />
+                  </div>
+                  <div class="nav-link">
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Contact us</a></li>
+                  </ul>
+                </div>
+                <div class="icons">
+                  <ul>
+                    <li><i class=" fa fa-thin fa-user"></i></li>
+                   <li><i class=" fa fa-regular fa-bars"></i></li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+   </div>
+        <div class="container bg-ly">
+          <div class="mx-w d-flex ">
+            <div class="content ">
+              <h5>Convert ideas into practical applications</h5>
+              <h1>New Digital App For Blockchain</h1>
+              <p class="p1">Vestibulum et urna consectetur magna aliquet blandit ac nec metus. Curabitur felis nulla, placerat nec ligula et, venenatis accumsan urna. Mauris quam arcu, egestas nec</p>
+              <div class="bt">
+              <button class="btn-hover color-2">Read more</button>
+              <button class="btn-hover color-2">Watch Video</button> 
+            </div>    
+          </div>
+          </div>
+        </div>
+        <div class="container1 bg">
+          <img width="481" height="844" src="./Images/phone-1.png" alt="image" class="center">
+          <img src="./Images/chart1-with-shadow.png" alt="image" class="topcorner">
+          <img src="./Images/Info-box-2-shadow.png" class="bottomcorner" />
+          <img width="253" height="207" src="./Images/Info-box-1-shadow.png" class="topleft"/>
+          <img width="110" height="112" src="./Images/chart2-shadow.png" class="bottomleft"/>
+        </div>
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <img src="./Images/image1.png" alt="image"/>
+            <img src="./Images/image4.png" alt="image"/>
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="./Images/image2.png" alt="image"/>
+            <img src="./Images/image5.png" alt="image"/>
+          </div>
+          
+          <div class="mySlides fade">
+          <img src="./Images/image3.png" alt="image"/>
+          <img src="./Images/image6.png" alt="image"/>
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)"> </a>
+          <a class="next" onclick="plusSlides(1)">  </a>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+          <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+            <div class="container2">
+              <div class="heading">
+                <h1>Why do Investors Trust Us</h1>
+                <p>Suspendisse aliquet scelerisque arcu, et dapibus justo pharetra nec. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus ut mi risus. Fusce cursus maximus arcu sollicitudin pharetra</p>
+              </div>
+              <div class="d-flex">
+              <div class="cards">
+                <div class="card">
+                      <div class="elementor-icon text">
+                        <i aria-hidden="true" class="fas fa-hands"></i>
+                        <h2>Fundraising Mechanism</h2>
+                        <p>Cras et massa orci. Donec ipsum massa, auctor ut odio ac, aliquam finibus neque. Quisque semper neque</p>
+                      </div>
+                </div>
+                <div class="card">
+                  <div class="elementor-icon1 text">
+                    <i aria-hidden="true" class="fas fa-chart-line"></i>
+                    <h2>KYC/AML Checks</h2>
+                    <p>Nullam id ex luctus, accumsan lectus cursus, vehicula enim. Donec nibh libero, elementum vel augue</p>
+                  </div>
+            </div>
+            <div class="card">
+              <div class="elementor-icon2 text">
+                <i aria-hidden="true" class="fas fa-rocket"></i>
+                <h2>Marketing Strategy</h2>
+                <p>Donec ipsum massa, auctor ut odio ac, aliquam finibus neque. Quisque semper neque eros, nec placerat</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+     <div class="spacesizer">
+      <img width="700" height="500"src="C:\Moneerwebsite\Images\2-09-Responsive-Device-Mockup.png" class="center"/>
+     </div>
+     <div class="container4">
+      
+      <h2>Moving your Existing solutions to block chain</h2>
+    <div class="section5 d-flex1">
+     
+      <div class="li1">
+       
+      <ul >
+        <li><h4>pre-sales start</h4><p>Aug 23 2023</p></li>
+        <li></i><h4>End-sales</h4><p>Sep 28 2023</p></li>
+      </ul>
+      </div>
+      <div class="li2">
+      <ul >
+        <li><h4>Minimum amount to investors</h4><p>2345 c0 #90000</p></li>
+        <li><h4>Token rate</h4><p>30000000</p></li>
+      </ul>
+    </div>
+    </div>
+    <div class=" section6">
+<p>Secure Paid 150k</p> 
+<p>Crowdfunding 450k</p>
+<p>Verified ICOs 20k</p>
+<p class="p1"> Fusce metus mi, pharetra a magna at, suscipit accumsan nisl. Nam sodales turpis vitae libero bibendum, et molestie diam imperdiet. In hac habitasse platea dictumst</p>
+<button class="btn-hover color-2">Get Premium mode</button>
+</div>
+    </div>
+    
+     <div class="container3">
+      <div class="heading">
+        <h1>Promote your Cryptocurrency</h1>
+      </div>
+      <div class="d-flex">
+      <div class="cards">
+        <div class="card">
+              <div class="element-icon text1">
+                <i aria-hidden="true" class="fas fa-donate"></i>
+                <h3>IEOs take place on a crypto exchange on behalf of the company that is launching new tokens</h3>
+                <p>Vestibulum vitae sapien mollis metus viverra fringilla. Curabitur ultricies velit nec augue sodales, a scelerisque dui elementum. Ut quis leo a magna venenatis convallis. Integer ut lacus augue. Donec luctus ex ut metus vestibulum placerat. Nam tincidunt neque sed malesuada ultrices. Nullam id felis vitae augue suscipit sagittis</p>
+              </div>
+        </div>
+        <div class="card">
+          <div class="element-icon1 text1">
+            <i aria-hidden="true" class="fas fa-chart-line"></i>
+            <h3>Additional marketing strategies in order to raise the liquidity of the IEO asset</h3>
+            <p> Ut quis leo a magna venenatis convallis. Integer ut lacus augue. Donec luctus ex ut metus vestibulum placerat. Nam tincidunt neque sed malesuada ultrices. Nullam id felis vitae augue suscipit sagittis. Aenean consectetur nisl quis erat tincidunt luctus. Morbi lacinia arcu risus, vitae placerat nunc tempus</p>
+          </div>
+        </div>
+    </div>
+ </div>
+<div class="box">
+  <div class="footer">
+   <div class=" d-flex1">
+    <div class=" section1">
+      <img width="184" height="62" src="./Images/moneerlogo.png"/>
+      <p>Magnis dis parturient montes nascetur ridiculus. Congue mauris<br> rhoncus aenean vel elit scelerisque mauris pellentesque</p>
+      <div class="ic ln d-flex">
+       <ul>
+        <li><i aria-hidden="true" class="fas fa-envelope"></i></li>
+        <li><i aria-hidden="true" class="fas fa-phone"></i></li>
+        <li><i aria-hidden="true" class="fas fa-map-marker-alt"></i></li>
+       </ul>
+        <ul>
+          <li><a href="#"><b>monnersupport@email.com</b></a></li>
+          <li><a href="#"><b>(+1) 123-123-123</b></a></li>
+          <li><a href="#"><b>275 Jimmy Way Copperopolis, California(CA), 95228</b></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="section2">
+      <h2>Company</h2>
+      <ul>
+        <li><i aria-hidden="true" class="fas fa-angle-right"></i><a href="#">Home</a></li>
+        <li><i aria-hidden="true" class="fas fa-angle-right"></i><a href="#">About Us</a></li>
+        <li><i aria-hidden="true" class="fas fa-angle-right"></i><a href="#">Services</a></li>
+        <li><i aria-hidden="true" class="fas fa-angle-right"></i><a href="#">Blog</a></li>
+        <li><i aria-hidden="true" class="fas fa-angle-right"></i><a href="#">Pages</a></li>
+        <li><i aria-hidden="true" class="fas fa-angle-right"></i><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+   </div>
+   <div class="section3">
+    <h2>Latest News</h2>
+    <h3>What Will the Stock Market Do Today? 3 Big Stories to Watch</h3>
+    <p>August 15, 2020</p>
+    <hr>
+  </div>
+  <div class="section3">
+    
+    <h3>Coinbase Dogecoin Sweepstakes: What to Know About the $1.2M DOGE Giveaway</h3>
+    <p>August 15, 2020</p>
+    <hr>
+  </div>
+  </div>
+</div>
+      </body>
+      </html>

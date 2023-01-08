@@ -447,3 +447,25 @@ text-align: center;
 .bt{
   text-align: center;
 }
+.progress-box{
+  display: flex;
+  flex-direction: column;
+}
+.progress-box .progress-line{
+ width: 100%;
+margin-top: 15px;
+}
+.progress-box .progress-line .progress{
+ width: 80vw;
+ background-color: #b1b1b1;
+ height: 10px;
+ border-radius: 20px;
+}
+.progress-box .progress-line .progress .progress-bar{
+  height: 100%;
+  width: 20%;
+  background-image: linear-gradient(to right, #FF357D,#FF5851,#F7931A,#F3BA27);
+  position: relative;
+  transition: all 0.5s;
+   border-radius: 20px;
+}

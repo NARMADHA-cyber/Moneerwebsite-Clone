@@ -106,6 +106,18 @@
               slides[slideIndex-1].style.display = "block";  
               dots[slideIndex-1].className += " active";
             }
+               window.addEventListener('load',()=>{
+    let progressBars = document.querySelectorAll('.progress-bar');
+    let values = [
+       "90%",
+       "70%",
+       "50%",
+       
+    ];
+    progressBars.forEach((progress,index)=>{
+        progress.style.width =values[index];
+    })
+})
             </script>
             <div class="container2">
               <div class="heading">
@@ -161,10 +173,33 @@
       </ul>
     </div>
     </div>
-    <div class=" section6">
-<p>Secure Paid 150k</p> 
-<p>Crowdfunding 450k</p>
-<p>Verified ICOs 20k</p>
+  <div class=" section6">
+      <div class="progress-box">
+        <div class="progress-line">
+            <p>Secure Paid 150k</p>
+            <div class="progress">
+                <div class="progress-bar">
+
+                </div>
+            </div>
+        </div>
+        <div class="progress-line">
+            <p>Crowdfunding 450k</p>
+            <div class="progress">
+                <div class="progress-bar">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="progress-line">
+            <p>Verified ICOs 20k</p>
+            <div class="progress">
+                <div class="progress-bar">
+                </div>
+            </div>
+          </div>
+     </div>
+     </div>
 <p class="p1"> Fusce metus mi, pharetra a magna at, suscipit accumsan nisl. Nam sodales turpis vitae libero bibendum, et molestie diam imperdiet. In hac habitasse platea dictumst</p>
 <button class="btn-hover color-2">Get Premium mode</button>
 </div>
